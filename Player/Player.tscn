@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://bvl6dw1e36eqp"]
+
+[ext_resource type="Script" path="res://Player/Player.cs" id="1_45pbt"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_i53pd"]
+
+[node name="Player" type="RigidBody2D"]
+gravity_scale = 2.0
+script = ExtResource("1_45pbt")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_i53pd")
+
+[node name="Body" type="ColorRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0.981281, 0.982593, 1)
