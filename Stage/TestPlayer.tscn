@@ -5,8 +5,9 @@
 
 [node name="TestPlayer" type="Node"]
 
-[node name="Player" parent="." instance=ExtResource("1_t5bsb")]
-
 [node name="Wall" parent="." instance=ExtResource("2_ldq0g")]
 position = Vector2(20, 698)
 metadata/_edit_group_ = true
+
+[node name="Player" parent="." instance=ExtResource("1_t5bsb")]
+position = Vector2(88, 226)
